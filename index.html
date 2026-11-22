@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#111b36">
+  <meta name="description" content="The story of a commemorative plaque inspired by the Finnish archipelago.">
+  <title>A Swan’s Journey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#story">Skip to the story</a>
+  <header class="masthead">
+    <p class="label">Sounds of the Archipelago</p>
+    <a href="#ceremony">The ceremony</a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <p class="label">A first port visit</p>
+        <h1 id="title">A Swan’s<br><em>Journey</em></h1>
+        <p>A commemorative plaque from the Finnish archipelago, brought together by a ship and its host port.</p>
+        <a class="button" href="#story">Discover the plaque</a>
+      </div>
+      <figure class="hero-image">
+        <img src="plaque.webp" width="990" height="1400" alt="Silver circular medal with radiating ridges, set on two deep-blue panels">
+        <figcaption>Plaque design study</figcaption>
+      </figure>
+    </section>
+
+    <section class="story" id="story" aria-labelledby="story-title">
+      <div class="story-inner">
+        <h2 id="story-title">Discover the plaque</h2>
+        <nav class="story-links" aria-label="Design inspiration">
+          <a href="swan/">
+            <strong>The Swan</strong>
+            <span>The call behind the medal’s pattern</span>
+          </a>
+          <a href="archipelago/">
+            <strong>The Archipelago</strong>
+            <span>The islands behind the plaque’s shape</span>
+          </a>
+        </nav>
+        <div class="details">
+          <article>
+            <h3>A link to shipbuilding</h3>
+            <p>The proposed steel medal takes its cue from the steel-cutting ceremony, when the first piece of steel is cut for a new ship.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ceremony" id="ceremony" aria-labelledby="ceremony-title">
+      <div class="ceremony-copy">
+        <p class="label">The ceremony</p>
+        <h2 id="ceremony-title">Join the two pieces.</h2>
+        <p>At the first port visit, the ship and port representatives bring the medal and backing together. Placing the medal on the backing completes the plaque in a gesture inspired by the swan’s lifelong bond.</p>
+      </div>
+      <figure class="assembly">
+        <img id="assembly-image" src="plaque-separated.webp" width="848" height="1200" loading="lazy" alt="The silver medal and blue backing shown before assembly">
+        <figcaption class="assembly-toggle" aria-label="Compare the two stages of assembly">
+          <button type="button" data-stage="apart" aria-pressed="true" aria-controls="assembly-image">Before joining</button>
+          <button type="button" data-stage="joined" aria-pressed="false" aria-controls="assembly-image">Completed</button>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <img src="packaging.webp" width="1150" height="841" loading="lazy" alt="A concept render of the open navy presentation box with the plaque and printed story card inside">
+      <div>
+        <h2 id="closing-title">From Finland<br>with love.</h2>
+        <p>A gift to mark the first visit and celebrate the relationship it begins.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Aalto University · Experiment: Process</p>
+    <p>Team 2 Good 2 Be True</p>
+  </footer>
+  <script src="assembly.js"></script>
+</body>
+</html>
