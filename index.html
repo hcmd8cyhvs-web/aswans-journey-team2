@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#111b36">
   <meta name="description" content="The story of a commemorative plaque inspired by the Finnish archipelago.">
   <title>A Swan’s Journey</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=final-images">
 </head>
 <body>
   <a class="skip" href="#story">Skip to the story</a>
@@ -24,7 +24,7 @@
         <a class="button" href="#story">Discover the plaque</a>
       </div>
       <figure class="hero-image">
-        <img src="plaque.webp" width="990" height="1400" alt="Silver circular medal with radiating ridges, set on two deep-blue panels">
+        <img src="plaque-final.webp" width="1447" height="2048" alt="Silver circular medal with radiating ridges, set on two deep-blue panels">
         <figcaption>Plaque design study</figcaption>
       </figure>
     </section>
@@ -58,16 +58,22 @@
         <p>At the first port visit, the ship and port representatives bring the medal and backing together. Placing the medal on the backing completes the plaque in a gesture inspired by the swan’s lifelong bond.</p>
       </div>
       <figure class="assembly">
-        <img id="assembly-image" src="plaque-separated.webp" width="848" height="1200" loading="lazy" alt="The silver medal and blue backing shown before assembly">
+        <div class="assembly-visual" id="assembly-visual">
+          <div class="assembly-before" id="assembly-before">
+            <img src="backing-final.webp" width="1447" height="2048" loading="lazy" alt="The final blue backing with wave patterns, before assembly">
+            <img src="medal-final.webp" width="1447" height="2048" loading="lazy" alt="The final silver medal, before assembly">
+          </div>
+          <img id="assembly-image" src="plaque-final.webp" width="1447" height="2048" loading="lazy" alt="The final silver medal joined to the blue backing" hidden>
+        </div>
         <figcaption class="assembly-toggle" aria-label="Compare the two stages of assembly">
-          <button type="button" data-stage="apart" aria-pressed="true" aria-controls="assembly-image">Before joining</button>
-          <button type="button" data-stage="joined" aria-pressed="false" aria-controls="assembly-image">Completed</button>
+          <button type="button" data-stage="apart" aria-pressed="true" aria-controls="assembly-visual">Before joining</button>
+          <button type="button" data-stage="joined" aria-pressed="false" aria-controls="assembly-visual">Completed</button>
         </figcaption>
       </figure>
     </section>
 
     <section class="closing" aria-labelledby="closing-title">
-      <img src="packaging.webp" width="1150" height="841" loading="lazy" alt="A concept render of the open navy presentation box with the plaque and printed story card inside">
+      <img src="packaging-final.webp" width="1376" height="818" loading="lazy" alt="Open navy presentation box holding the silver medal, with the story card inside the lid">
       <div>
         <h2 id="closing-title">From Finland<br>with love.</h2>
         <p>A gift to mark the first visit and celebrate the relationship it begins.</p>
@@ -78,6 +84,6 @@
     <p>Aalto University · Experiment: Process</p>
     <p>Team 2 Good 2 Be True</p>
   </footer>
-  <script src="assembly.js"></script>
+  <script src="assembly.js?v=final-images"></script>
 </body>
 </html>
